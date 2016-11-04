@@ -10,6 +10,6 @@ _A sample of the type of data that can be displayed when hovering over an IPv4 a
 
 ## Support
 
-Check out the Wiki for documentation.
+Check out the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for documentation.
 
 Please log an issue with any questions/comments. We'll respond as soon as possible. 
