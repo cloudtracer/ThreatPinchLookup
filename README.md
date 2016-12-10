@@ -22,6 +22,7 @@ _A sample of the type of data that can be displayed when hovering over an IPv4 a
 - VirusTotal for MD5 and SHA2 lookups.
 - Cymon.io for IPv4 lookups.
 - CIRCL (Computer Incident Response Center Luxembourg) for CVE Lookups.
+- Add your own in the developers options page!
 
 ## Support
 
