@@ -37,6 +37,6 @@ Please log an issue with any questions/comments. We'll respond as soon as possib
 You can download the ThreatPinch Lookup extension directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke)
 
 ## Release Notes
-- 1.0.0.18 - 2016-12-11 - Added FQDN support, regex updates, PassiveTotal support for FQDN/Whois, ThreatMiner FQDN, support for de-fanged IOCs
+- 1.0.0.19 - 2016-12-11 - Added FQDN support, regex updates, PassiveTotal support for FQDN/Whois, ThreatMiner FQDN, support for de-fanged IOCs
 - 1.0.0.17 - 2016-12-10 - Improved preformance, added top level IOC pivots, threat indicators and tactics to saved requests for use in CouchDB/ELK aggregations
 - 1.0.0.10 - 2016-11-02 - Initial Public Release  
