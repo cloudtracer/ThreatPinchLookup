@@ -1,0 +1,51 @@
+{ 
+ "THREATMINERMD5META": {
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+      "file_name": {
+        "condition": "true",
+        "datapath": "RESPONSE.results",
+        "mapping": "${PINCH.LOOP.file_name}",
+        "objectloop": true,
+        "order": 0,
+        "title": "File"
+      },
+      "file_size": {
+        "condition": "true",
+        "datapath": "RESPONSE.results",
+        "mapping": "${PINCH.LOOP.file_size}",
+        "objectloop": true,
+        "order": 1,
+        "title": "Size"
+      },
+      "date_analysed": {
+        "condition": "true",
+        "datapath": "RESPONSE.results",
+        "mapping": "${PINCH.LOOP.date_analysed}",
+        "objectloop": true,
+        "order": 2,
+        "title": "Analysed"
+      },
+      "file_type": {
+        "condition": "true",
+        "datapath": "RESPONSE.results",
+        "mapping": "${PINCH.LOOP.file_type}",
+        "objectloop": true,
+        "order": 3,
+        "title": "Type"
+      }
+    },
+    "dataType": "JSON",
+    "httpHeaders": "",
+    "httpType": "GET",
+    "iocs": true,
+    "lookupName": "ThreatMiner MD5 Metadata",
+    "lookupType": "MD5",
+    "lookupUrl": "https://www.threatminer.org/sample.php?q=${PINCH.HOVERITEM}&api=True&rt=1",
+    "lookupVariable": "THREATMINERMD5META",
+    "onError": "API Error",
+    "order": 11,
+    "regexMatcher": false,
+    "requestGroup": "INTERNET"
+  }
+  }
