@@ -1,0 +1,74 @@
+{
+	"THREATMINERIP": {
+		"authorizationType": "DEFAULT",
+		"dataSchema": {
+			"title": {
+				"linkTitle": "${PINCH.HOVERITEM}",
+				"linkUrl": "https://www.threatminer.org/host.php?q=${PINCH.HOVERITEM}",
+				"mapping": "${PINCH.LINKURL}",
+				"order": 0,
+				"title": "ThreatMiner"
+			},
+			"rdns": {
+				"condition": "true",
+				"datapath": "RESPONSE.results",
+				"mapping": "${PINCH.LOOP.reverse_name}",
+				"objectloop": true,
+				"order": 1,
+				"title": "rdns"
+			},
+			"bgp": {
+				"condition": "true",
+				"datapath": "RESPONSE.results",
+				"mapping": "${PINCH.LOOP.bgp_prefix}",
+				"objectloop": true,
+				"order": 2,
+				"title": "bgp"
+			},
+			"cc": {
+				"condition": "true",
+				"datapath": "RESPONSE.results",
+				"mapping": "${PINCH.LOOP.cc}",
+				"objectloop": true,
+				"order": 3,
+				"title": "cc"
+			},
+			"asnname": {
+				"condition": "true",
+				"datapath": "RESPONSE.results",
+				"mapping": "${PINCH.LOOP.asn_name}",
+				"objectloop": true,
+				"order": 4,
+				"title": "asn"
+			},
+			"orgname": {
+				"condition": "true",
+				"datapath": "RESPONSE.results",
+				"mapping": "${PINCH.LOOP.org_name}",
+				"objectloop": true,
+				"order": 5,
+				"title": "org"
+			},
+			"reg": {
+				"condition": "true",
+				"datapath": "RESPONSE.results",
+				"mapping": "${PINCH.LOOP.register}",
+				"objectloop": true,
+				"order": 6,
+				"title": "register"
+			}
+		},
+		"dataType": "JSON",
+		"httpHeaders": "",
+		"httpType": "GET",
+		"iocs": true,
+		"lookupName": "ThreatMiner IP Lookup",
+		"lookupType": "IPV4",
+		"lookupUrl": "https://www.threatminer.org//host.php?q=${PINCH.HOVERITEM}&api=True&rt=1",
+		"lookupVariable": "THREATMINERIP",
+		"onError": "API Error",
+		"order": 3,
+		"regexMatcher": false,
+		"requestGroup": "INTERNET"
+	}
+}
