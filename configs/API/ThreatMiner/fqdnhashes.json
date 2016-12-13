@@ -1,0 +1,37 @@
+{
+  "THREATMINEREFQDNHASHES": {
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+      "title": {
+        "linkTitle": "${PINCH.HOVERITEM}",
+        "linkUrl": "https://www.threatminer.org/domain.php?q=${PINCH.HOVERITEM}",
+        "mapping": "${PINCH.LINKURL}",
+        "order": 0,
+        "title": "ThreatMiner"
+      },
+      "hash": {
+        "condition": "true",
+        "datapath": "RESPONSE.results",
+        "limit": 10,
+        "linkTitle": "${PINCH.LOOP}",
+        "linkUrl": "https://www.threatminer.org/sample.php?q=${PINCH.LOOP}",
+        "mapping": "${PINCH.LINKURL}",
+        "objectloop": true,
+        "order": 1,
+        "title": "HASH"
+      }
+    },
+    "dataType": "JSON",
+    "httpHeaders": "",
+    "httpType": "GET",
+    "iocs": true,
+    "lookupName": "ThreatMiner EFQDN Hashes",
+    "lookupType": "EFQDN",
+    "lookupUrl": "https://www.threatminer.org/domain.php?q=${PINCH.HOVERITEM}&api=True&rt=4",
+    "lookupVariable": "THREATMINEREFQDNHASHES",
+    "onError": "API Error",
+    "order": 15,
+    "regexMatcher": false,
+    "requestGroup": "INTERNET"
+  }
+}
