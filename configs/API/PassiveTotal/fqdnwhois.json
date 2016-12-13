@@ -1,0 +1,67 @@
+{"PASSIVETOTALEFQDNWHOIS": {
+    "authorizationSettings": {
+      "api_key": "${PINCH.USERDEFINED.api_key.value}",
+      "api_password": "${PINCH.USERDEFINED.api_password.value}",
+      "validated": true
+    },
+    "authorizationType": "API_KEY_AND_PASSWORD_BASIC",
+    "dataSchema": {
+      "title": {
+        "linkTitle": "${PINCH.HOVERITEM}",
+        "linkUrl": "https://www.passivetotal.org/search/${PINCH.HOVERITEM}",
+        "mapping": "${PINCH.LINKURL}",
+        "order": 0,
+        "title": "PassiveTotal"
+      },
+      "contactEmail": {
+        "mapping": "${PINCH.RESPONSE.contactEmail}",
+        "order": 2,
+        "title": "Contact"
+      },
+      "registrar": {
+        "mapping": "${PINCH.RESPONSE.registrar}",
+        "order": 3,
+        "title": "registrar"
+      },
+      "registryUpdatedAt": {
+        "mapping": "${PINCH.RESPONSE.registryUpdatedAt}",
+        "order": 4,
+        "title": "Updated"
+      },
+      "expiresAt": {
+        "mapping": "${PINCH.RESPONSE.contactEmail}",
+        "order": 5,
+        "title": "Contact"
+      }
+    },
+    "dataType": "JSON",
+    "httpHeaders": "",
+    "httpType": "GET",
+    "iocs": true,
+    "lookupName": "PassiveTotal EFQDN Whois",
+    "lookupType": "EFQDN",
+    "lookupUrl": "https://api.passivetotal.org/v2/whois?query=${PINCH.HOVERITEM}",
+    "lookupVariable": "PASSIVETOTALEFQDNWHOIS",
+    "onError": "API Error",
+    "onNotAuthorized": "Setup PassiveTotal API",
+    "order": 13,
+    "regexMatcher": false,
+    "registration": {
+      "link": "https://www.passivetotal.org/registration",
+      "summary": "A threat-analysis platform created for analysts, by analysts. Our goal is to provide analysts with as much data as possible in order to prevent attacks before they happen.",
+      "title": "PassiveTotal",
+      "type": "Free Limited (100 API requests per week)"
+    },
+    "requestGroup": "INTERNET",
+    "userDefined": {
+      "api_key": {
+        "title": "Passive Total Key",
+        "value": "YOURDATAHERE"
+      },
+      "api_password": {
+        "title": "PassiveTotal Secret",
+        "value": "YOURDATAHERE"
+      }
+    }
+  }
+  }
