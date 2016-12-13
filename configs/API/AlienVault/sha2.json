@@ -1,4 +1,5 @@
-"ALIENVAULTSHA2": {
+{
+  "ALIENVAULTSHA2": {
     "authorizationType": "DEFAULT",
     "registration": {
       "type":"Free",
@@ -38,3 +39,4 @@
       }
     }
   }
+}
