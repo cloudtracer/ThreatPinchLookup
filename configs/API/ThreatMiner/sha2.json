@@ -1,0 +1,35 @@
+{
+	"THREATMINERSHA2": {
+		"authorizationType": "DEFAULT",
+		"dataSchema": {
+			"title": {
+				"linkTitle": "${PINCH.HOVERITEM}",
+				"linkUrl": "https://www.threatminer.org/sample.php?q=${PINCH.HOVERITEM}",
+				"mapping": "${PINCH.LINKURL}",
+				"order": 0,
+				"title": "ThreatMiner"
+			},
+			"samples": {
+				"condition": "true",
+				"datapath": "RESPONSE.results.0.av_detections",
+				"mapping": "${PINCH.LOOP.detection}",
+				"objectloop": true,
+				"order": 1,
+				"title": "${PINCH.LOOP.av}"
+			}
+		},
+		"dataType": "JSON",
+		"httpHeaders": "",
+		"httpType": "GET",
+		"indicatorExpression": "${(PINCH.OBJECTLOOPCOUNTER > 1) ? ((PINCH.OBJECTLOOPCOUNTER > 4) ? 'bad' : 'suspicious') : 'good'}",
+		"iocs": true,
+		"lookupName": "ThreatMiner SHA2 Lookup",
+		"lookupType": "SHA2",
+		"lookupUrl": "https://www.threatminer.org/sample.php?q=${PINCH.HOVERITEM}&api=True&rt=6",
+		"lookupVariable": "THREATMINERSHA2",
+		"onError": "API Error",
+		"order": 6,
+		"regexMatcher": false,
+		"requestGroup": "INTERNET"
+	}
+}
