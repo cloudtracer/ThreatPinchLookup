@@ -38,7 +38,9 @@ You can download the ThreatPinch Lookup extension directly from the [Chrome Web 
 
 ## Where is my data stored?
 
-There is no backend server or database for ThreatPinch Lookup. All data related to API integrations or lookup configurations resides in your Chrome session storage, this allows your configurations to work in any Chrome browser your account is linked to.  Look up history information is stored in your browsers local storage due to the Chrome session storage limits, and lookup history can be view or wiped in the developers options for now. This means your lookup history will not follow you from browser to browser.
+There is no backend server or database for ThreatPinch Lookup. All data related to API integrations or lookup configurations resides in your Chrome session storage, this allows your configurations to work in any Chrome browser your account is linked to.  Look up history information is stored in your browsers local storage due to the Chrome session storage limits, and lookup history can be viewed or wiped in the developers options for now. This means your lookup history will not follow you from browser to browser.
+
+Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
 - 1.0.24: 2016-12-18 - Fix for delete buttons in options page.
