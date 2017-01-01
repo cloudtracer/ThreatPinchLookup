@@ -24,6 +24,7 @@ _A sample of the type of data that can be displayed when hovering over an IPv4 a
 - Cymon.io for IPv4 lookups.
 - CIRCL (Computer Incident Response Center Luxembourg) for CVE Lookups.
 - PassiveTotal for FQDN Whois Lookups
+- MISP for MD5 and SHA2 (If you want more submit an issue in this github)
 - Add your own in the developers options page!
 
 ## Support
@@ -43,6 +44,7 @@ There is no backend server or database for ThreatPinch Lookup. All data related 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.25: 2017-01-01 - MISP integrations, disable buttons in options, moved lookup types to local storage (regex for EFQDN is too big to save in sync), enhancements to EFQDN lookups, lots of refactoring.
 - 1.0.24: 2016-12-18 - Fix for delete buttons in options page.
 - 1.0.23: 2016-12-14 - Fixes to CouchDB top level metadata, fix to IPv4 regex to filter out in-addr.arpa, fix to EFQDN to filter out URLs (URL IOC will come later..), added EFQDN lookups for IBM X-Force and VirusTotal
 - 1.0.19: 2016-12-11 - Added FQDN support, regex updates, PassiveTotal support for FQDN/Whois, ThreatMiner FQDN, support for de-fanged IOCs
