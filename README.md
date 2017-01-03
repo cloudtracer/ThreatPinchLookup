@@ -44,6 +44,7 @@ There is no backend server or database for ThreatPinch Lookup. All data related 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.26: 2017-01-02 - Break fix for local storage of lookup types.
 - 1.0.25: 2017-01-01 - MISP integrations, disable buttons in options, moved lookup types to local storage (regex for EFQDN is too big to save in sync), enhancements to EFQDN lookups, lots of refactoring.
 - 1.0.24: 2016-12-18 - Fix for delete buttons in options page.
 - 1.0.23: 2016-12-14 - Fixes to CouchDB top level metadata, fix to IPv4 regex to filter out in-addr.arpa, fix to EFQDN to filter out URLs (URL IOC will come later..), added EFQDN lookups for IBM X-Force and VirusTotal
