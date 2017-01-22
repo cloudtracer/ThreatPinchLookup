@@ -6,6 +6,9 @@ ThreatPinch Lookup creates informational tooltips when hovering oven an item of 
 
 ![](https://cloud.githubusercontent.com/assets/6827829/19833788/3c4df320-9e1d-11e6-8c4e-1095e3cc1ac6.png)
 
+See it in action
+![](https://github.com/cloudtracer/ThreatPinchLookup/blob/master/talosblog2.gif)
+
 _A sample of the type of data that can be displayed when hovering over an IPv4 address._
 
 ## Current IOC Support
