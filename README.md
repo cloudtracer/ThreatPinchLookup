@@ -50,6 +50,7 @@ There is no backend server or database for ThreatPinch Lookup. All data related 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.31: 2017-02-13 - Added options for case sensitive API requests.
 - 1.0.30: 2017-02-13 - First attempt at API Groups for quick API key management. Bulk search page updates, SHA1 IOCs and lookups, edge case fixes for popover, Censys.io lookup for IPv4 addresses, added a number of observable detection regex for future use, added context menu highlight select and send to search page.
 - 1.0.29: 2017-01-23 - Options interface make over, basic bulk lookup functionality, some fixes to improve observable detection and prevention in editable html elements.
 - 1.0.28: 2017-01-04 - Performance improvements for pages with large quantities of observables.
