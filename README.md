@@ -15,20 +15,22 @@ _See it in action on Cisco Talos Blog._
 ## Current IOC Support
 - IPv4
 - MD5
+- SHA1
 - SHA2
 - CVE
 - FQDN (EFQDN is for Internet FQDN, IFQDN is for internal domains)
 - Add your own in the options with regex!
 
 ## Current Integrations
-- ThreatMiner for IPv4, FQDN, MD5 and SHA2 lookups.
-- Alienvault OTX for IPv4, MD5 and SHA2 lookups.
+- ThreatMiner for IPv4, FQDN, MD5, SHA1 and SHA2 lookups.
+- Alienvault OTX for IPv4, MD5, SHA1 and SHA2 lookups.
 - IBM X-Force Exchange for IPv4, EFQDN lookups.
-- VirusTotal for MD5, SHA2 and FQDN lookups.
+- VirusTotal for MD5, SHA1, SHA2 and FQDN lookups.
 - Cymon.io for IPv4 lookups.
-- CIRCL (Computer Incident Response Center Luxembourg) for CVE Lookups.
-- PassiveTotal for FQDN Whois Lookups
+- CIRCL (Computer Incident Response Center Luxembourg) for CVE lookups.
+- PassiveTotal for FQDN Whois lookups
 - MISP for MD5 and SHA2 (If you want more submit an issue in this github)
+- Censys.io for IPv4 lookups
 - Add your own in the developers options page!
 
 ## Support
@@ -48,6 +50,7 @@ There is no backend server or database for ThreatPinch Lookup. All data related 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.30: 2017-02-13 - First attempt at API Groups for quick API key management. Bulk search page updates, SHA1 IOCs and lookups, edge case fixes for popover, Censys.io lookup for IPv4 addresses, added a number of observable detection regex for future use, added context menu highlight select and send to search page.
 - 1.0.29: 2017-01-23 - Options interface make over, basic bulk lookup functionality, some fixes to improve observable detection and prevention in editable html elements.
 - 1.0.28: 2017-01-04 - Performance improvements for pages with large quantities of observables.
 - 1.0.26: 2017-01-02 - Break fix for local storage of lookup types.
