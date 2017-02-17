@@ -39,6 +39,8 @@ Check out the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for 
 
 Please log an issue with any questions/comments. We'll respond as soon as possible. 
 
+Follow [@ThreatPinch](https://twitter.com/ThreatPinch) on Twitter.
+
 ## Chrome Web Store
 
 You can download the ThreatPinch Lookup extension directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke)
