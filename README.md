@@ -42,6 +42,8 @@ Please log an issue with any questions/comments. We'll respond as soon as possib
 
 Follow [@ThreatPinch](https://twitter.com/ThreatPinch) on Twitter.
 
+Youtube channel with [Demos](https://www.youtube.com/channel/UCuhYaI1qbb-exuhzscp3HBQ).
+
 ## Chrome Web Store
 
 You can download the ThreatPinch Lookup extension directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke)
