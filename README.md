@@ -31,6 +31,7 @@ _See it in action on Cisco Talos Blog._
 - PassiveTotal for FQDN Whois lookups
 - MISP for MD5 and SHA2 (If you want more submit an issue in this github)
 - Censys.io for IPv4 lookups
+- Shodan for IPV4 lookups
 - Add your own in the developers options page!
 
 ## Support
@@ -52,6 +53,7 @@ There is no backend server or database for ThreatPinch Lookup. All data related 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.37: 2017-02-22 - Added Shodan IPv4 Lookup and API group, enhancements to bulk lookup interface, added pivot API related items to Request Lookup & Lookup Type schemas.
 - 1.0.35: 2017-02-14 - Updates to config pushing.
 - 1.0.31: 2017-02-13 - Added options for case sensitive API requests.
 - 1.0.30: 2017-02-13 - First attempt at API Groups for quick API key management. Bulk search page updates, SHA1 IOCs and lookups, edge case fixes for popover, Censys.io lookup for IPv4 addresses, added a number of observable detection regex for future use, added context menu highlight select and send to search page.
