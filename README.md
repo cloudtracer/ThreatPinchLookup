@@ -24,7 +24,7 @@ _See it in action on Cisco Talos Blog._
 ## Current Integrations
 - ThreatMiner for IPv4, FQDN, MD5, SHA1 and SHA2 lookups.
 - Alienvault OTX for IPv4, MD5, SHA1 and SHA2 lookups.
-- IBM X-Force Exchange for IPv4, EFQDN lookups.
+- IBM XForce Exchange for IPv4, EFQDN lookups.
 - VirusTotal for MD5, SHA1, SHA2 and FQDN lookups.
 - Cymon.io for IPv4 lookups.
 - CIRCL (Computer Incident Response Center Luxembourg) for CVE lookups.
