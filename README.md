@@ -55,6 +55,7 @@ There is no backend server or database for ThreatPinch Lookup. All data related 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.38: 2017-03-13 - Fix for bulk lookups interface which was broken by Chrome update 57.0.2987.98
 - 1.0.37: 2017-02-22 - Added Shodan IPv4 Lookup and API group, enhancements to bulk lookup interface, added pivot API related items to Request Lookup & Lookup Type schemas.
 - 1.0.35: 2017-02-14 - Updates to config pushing.
 - 1.0.31: 2017-02-13 - Added options for case sensitive API requests.
