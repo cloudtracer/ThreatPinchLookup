@@ -34,6 +34,9 @@ _See it in action on Cisco Talos Blog._
 - Shodan for IPV4 lookups
 - Add your own in the developers options page!
 
+## Need a new integration?
+- Log a github issue or reach out to [@ThreatPinch](https://twitter.com/ThreatPinch) on twitter.
+
 ## Support
 
 Check out the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for documentation.
