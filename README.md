@@ -53,11 +53,12 @@ You can download the ThreatPinch Lookup extension directly from the [Chrome Web 
 
 ## Where is my data stored?
 
-There is no backend server or database for ThreatPinch Lookup. All data related to API integrations or lookup configurations resides in your Chrome session storage, this allows your configurations to work in any Chrome browser your account is linked to.  Look up history information is stored in your browsers local storage due to the Chrome session storage limits, and lookup history can be viewed or wiped in the developers options for now. This means your lookup history will not follow you from browser to browser.
+There is no backend server or database for ThreatPinch Lookup. All data is stored in locally used PouchDB databases. It all exists in your browser. Previously Chrome remote storage was used for some configuration items, this proved too challenging due to limitations on the storage. Going forward the Pouch databases will allow for some more interesting functionality.
 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.43: 2017-04-02 - Updates to configuration migration code to new PouchDB configuration store.
 - 1.0.41: 2017-04-02 - Partial migration to React JS for options pages, added a graph relation explorer using pivot references in API requests (Still lots to do here). All configuration settings are now soley hosted in a locally stored PouchDB (using chrome storage became a big pain). Added Shodan API group settings. Implemented 24 hour request caching for successful lookups which means if you look up the same observable in less than 24 hours it won't cost you any extra API requests (next version this will be user configurable and trackable).
 - 1.0.38: 2017-03-13 - Fix for bulk lookups interface which was broken by Chrome update 57.0.2987.98
 - 1.0.37: 2017-02-22 - Added Shodan IPv4 Lookup and API group, enhancements to bulk lookup interface, added pivot API related items to Request Lookup & Lookup Type schemas.
