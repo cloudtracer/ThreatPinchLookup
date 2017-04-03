@@ -58,6 +58,7 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.45: 2017-04-03 - Another update to the migration code (sigh). Things will be smoother on Pouch in the future.
 - 1.0.43: 2017-04-02 - Updates to configuration migration code to new PouchDB configuration store.
 - 1.0.41: 2017-04-02 - Partial migration to React JS for options pages, added a graph relation explorer using pivot references in API requests (Still lots to do here). All configuration settings are now soley hosted in a locally stored PouchDB (using chrome storage became a big pain). Added Shodan API group settings. Implemented 24 hour request caching for successful lookups which means if you look up the same observable in less than 24 hours it won't cost you any extra API requests (next version this will be user configurable and trackable).
 - 1.0.38: 2017-03-13 - Fix for bulk lookups interface which was broken by Chrome update 57.0.2987.98
