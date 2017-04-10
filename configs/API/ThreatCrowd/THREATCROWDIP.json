@@ -1,0 +1,47 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://www.threatcrowd.org/ip.php?ip=${PINCH.HOVERITEM}",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "ThreatCrowd"
+        },
+        "votes": {
+            "mapping": "${PINCH.RESPONSE.votes}",
+            "order": 1,
+            "title": "votes"
+        },
+        "domains": {
+            "condition": "true",
+            "datapath": "RESPONSE.resolutions",
+            "mapping": "${PINCH.LOOP.domain}",
+            "objectloop": true,
+            "order": 2,
+            "limit": 5,
+            "title": "${PINCH.LOOP.last_resolved}"
+        },
+        "hashes": {
+            "condition": "true",
+            "datapath": "RESPONSE.hashes",
+            "mapping": "${PINCH.LOOP}",
+            "objectloop": true,
+            "order": 3,
+            "limit": 5,
+            "title": "Hash"
+        }
+    },
+    "indicatorExpression": "${(PINCH.RESPONSE.votes < 1) 0 ((PINCH.RESPONSE.votes == -1 ) 0 'bad' : 'suspicious') : 'good'}",
+    "dataType": "JSON",
+    "disabled": false,
+    "httpHeaders": "",
+    "httpType": "GET",
+    "lookupName": "ThreatCrowd IPv4 Lookup",
+    "lookupType": "IPV4",
+    "iocs": true,
+    "lookupUrl": "https://www.threatcrowd.org/searchApi/v2/ip/report/?ip=${PINCH.HOVERITEM}",
+    "lookupVariable": "THREATCROWDIP",
+    "order": 31,
+    "requestGroup": "INTERNET"
+}

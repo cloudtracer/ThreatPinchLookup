@@ -1,0 +1,33 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://cymon.io/${PINCH.HOVERITEM}",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "CYMON"
+        },
+        "tpicons": {
+            "expression": "${(DATA.indexOf('malware') >1) 0 PINCH.ICONS.MALWARE : ''}${(DATA.indexOf('botnet') >1 ) 0 PINCH.ICONS.BOT : ''}${(DATA.indexOf('phishing') >1 ) 0 PINCH.ICONS.PHISHING : ''}${(DATA.indexOf('attacks') >1 ) 0 PINCH.ICONS.ATTACK : ''}${(DATA.indexOf('scanning') >1 ) 0 PINCH.ICONS.SCANS : ''}${(DATA.indexOf('spam') >1 ) 0 PINCH.ICONS.SPAM : ''}${(DATA.indexOf('blacklist') >1 ) 0 PINCH.ICONS.BLACKLIST : ''}",
+            "flatten": true,
+            "mapping": "${PINCH.RESPONSE.timeline}",
+            "nocase": true,
+            "order": 1,
+            "raw": "timeline",
+            "title": false
+        }
+    },
+    "dataType": "JSON",
+    "httpHeaders": "",
+    "httpType": "GET",
+    "indicatorExpression": "${(JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('scanning') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('blacklist') >1) 0 ((JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('malware') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('botnet') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('phishing') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('attacks') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('spam') >1) 0 'bad' : 'suspicious') : ((JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('malware') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('botnet') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('phishing') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('attacks') >1 || JSON.stringify(PINCH.RESPONSE.timeline).toLowerCase().indexOf('spam') >1) 0 'bad' : 'good')}",
+    "iocs": true,
+    "lookupName": "Cymon.io IP Lookup",
+    "lookupType": "IPV4",
+    "lookupUrl": "https://cymon.io/api/nexus/v1/ip/${PINCH.HOVERITEM}/timeline",
+    "lookupVariable": "CYMONIP",
+    "order": 2,
+    "regexMatcher": false,
+    "requestGroup": "INTERNET"
+}

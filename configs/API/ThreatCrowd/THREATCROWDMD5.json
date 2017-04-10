@@ -1,0 +1,42 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://www.threatcrowd.org/malware.php?md5=${PINCH.HOVERITEM}",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "ThreatCrowd"
+        },
+        "ips": {
+            "condition": "true",
+            "datapath": "RESPONSE.ips",
+            "mapping": "${PINCH.LOOP}",
+            "objectloop": true,
+            "order": 1,
+            "limit": 5,
+            "title": "IP"
+        },
+        "domains": {
+            "condition": "true",
+            "datapath": "RESPONSE.domains",
+            "mapping": "${PINCH.LOOP}",
+            "objectloop": true,
+            "order": 2,
+            "limit": 5,
+            "title": "FQDN"
+        }
+    },
+    "indicatorExpression": "${(PINCH.RESPONSE.scans.length > 0) 0 ((PINCH.RESPONSE.scans.length > 2 ) 0 'bad' : 'suspicious') : 'good'}",
+    "dataType": "JSON",
+    "disabled": false,
+    "httpHeaders": "",
+    "httpType": "GET",
+    "lookupName": "ThreatCrowd MD5 Lookup",
+    "lookupType": "MD5",
+    "iocs": true,
+    "lookupUrl": "https://www.threatcrowd.org/searchApi/v2/file/report/?resource=${PINCH.HOVERITEM}",
+    "lookupVariable": "THREATCROWDMD5",
+    "order": 32,
+    "requestGroup": "INTERNET"
+}

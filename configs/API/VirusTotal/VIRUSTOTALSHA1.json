@@ -1,0 +1,56 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://www.virustotal.com/en/file/${PINCH.RESPONSE.sha256}/analysis/",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "VirusTotal"
+        },
+        "scanned": {
+            "mapping": "${PINCH.RESPONSE.scan_date} UTC",
+            "order": 1,
+            "title": "Scanned"
+        },
+        "detections": {
+            "mapping": "${PINCH.RESPONSE.positives}/${PINCH.RESPONSE.total}",
+            "order": 2,
+            "title": "Detections"
+        },
+        "samples": {
+            "condition": "${(PINCH.LOOP.detected === true 0 'true': 'false')}",
+            "datapath": "RESPONSE.scans",
+            "mapping": "${PINCH.LOOP.result}",
+            "objectloop": true,
+            "order": 3,
+            "title": "${PINCH.LOOPPROPNAME}"
+        }
+    },
+    "dataType": "JSON",
+    "disabled": false,
+    "httpHeaders": "",
+    "httpPostData": "resource=${PINCH.HOVERITEM}&apikey=${PINCH.USERDEFINED.api_key.value}",
+    "httpType": "POST",
+    "indicatorExpression": "${(PINCH.RESPONSE.positives > 1) 0 ((PINCH.RESPONSE.positives > 3) 0 'bad' : 'suspicious') : 'good'}",
+    "lookupName": "VirusTotal SHA1 Lookup",
+    "lookupType": "SHA1",
+    "lookupUrl": "https://www.virustotal.com/vtapi/v2/file/report",
+    "lookupVariable": "VIRUSTOTALSHA1",
+    "order": 24,
+    "iocs": true,
+    "excludePivots": ["IPV4", "EFQDN"],
+    "registration": {
+        "link": "https://www.virustotal.com/en/documentation/virustotal-community/",
+        "summary": "VirusTotal is a free service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware.",
+        "title": "VirusTotal",
+        "type": "Free"
+    },
+    "requestGroup": "INTERNET",
+    "userDefined": {
+        "api_key": {
+            "title": "API Key",
+            "value": "YOURDATAHERE"
+        }
+    }
+}

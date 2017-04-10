@@ -1,0 +1,57 @@
+{
+    "authorizationSettings": {
+        "api_key": "${PINCH.USERDEFINED.api_key.value}",
+        "validated": true
+    },
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://www.shodan.io/host/${PINCH.HOVERITEM}",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "Shodan"
+        },
+        "os": {
+            "condition": "true",
+            "mapping": "${PINCH.RESPONSE.os}",
+            "order": 1,
+            "title": "OS"
+        },
+        "ports": {
+            "condition": "true",
+            "datapath": "RESPONSE.ports",
+            "mapping": "${PINCH.LOOP}",
+            "objectloop": true,
+            "order": 2,
+            "title": "Port"
+        }
+    },
+    "dataType": "JSON",
+    "disabled": false,
+    "excludePivots": ["SHA2", "MD5", "EFQDN"],
+    "httpHeaders": "",
+    "httpType": "GET",
+    "iocs": true,
+    "lookupName": "Shodan IP Lookup",
+    "lookupType": "IPV4",
+    "lookupUrl": "https://api.shodan.io/shodan/host/${PINCH.HOVERITEM}?key=${PINCH.USERDEFINED.api_key.value}",
+    "lookupVariable": "SHODANIP",
+    "onError": "API Error",
+    "onNotAuthorized": "Setup Shodan API",
+    "order": 30,
+    "regexMatcher": false,
+    "registration": {
+        "link": "https://account.shodan.io/register",
+        "summary": "Shodan is the world's first search engine for Internet-connected devices. Shodan is used around the world by researchers, security professionals, large enterprises, CERTs and everybody in between.",
+        "title": "Shodan",
+        "type": "Free"
+    },
+    "requestGroup": "INTERNET",
+    "userDefined": {
+        "api_key": {
+            "title": "API Key",
+            "value": "YOURDATAHERE"
+        }
+    }
+}

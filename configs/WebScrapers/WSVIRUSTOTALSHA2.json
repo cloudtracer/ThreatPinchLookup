@@ -1,0 +1,40 @@
+{
+	"authorizationType": "DEFAULT",
+	"dataSchema": {
+		"title": {
+			"linkTitle": "${PINCH.HOVERITEM}",
+			"linkUrl": "https://www.virustotal.com/en/file/${PINCH.HOVERITEM}/analysis/",
+			"mapping": "${PINCH.LINKURL}",
+			"order": 0,
+			"title": "VirusTotal"
+		},
+		"scanned": {
+			"mapping": "${PINCH.REGEXMATCH[2]} UTC",
+			"order": 1,
+			"title": "Scanned"
+		},
+		"detections": {
+			"mapping": "${PINCH.REGEXMATCH[3]}/${PINCH.REGEXMATCH[4]}",
+			"order": 2,
+			"title": "Detections"
+		}
+	},
+	"dataType": "HTML",
+	"httpHeaders": "",
+	"httpType": "GET",
+	"indicatorExpression": "${(PINCH.REGEXMATCH[3] > 1) ? ((PINCH.REGEXMATCH[3] > 3) ? 'bad' : 'suspicious') : 'good'}",
+	"lookupName": "VirusTotal SHA2 Lookup",
+	"lookupType": "SHA2",
+	"lookupUrl": "https://www.virustotal.com/en/file/${PINCH.HOVERITEM}/analysis/",
+	"lookupVariable": "VIRUSTOTALSHA2",
+	"onErrorLink": {
+		"linkTitle": "Perform Captcha",
+		"linkUrl": "https://www.virustotal.com/en/file/${PINCH.HOVERITEM}/analysis/",
+		"mapping": "${PINCH.LINKURL}",
+		"title": "Perform Captcha"
+	},
+	"onErrorRegex": "VirusTotal is trying to prevent scraping and abuse[\\s\\S]*?(\\b[a-fA-F\\d]{64}\\b)",
+	"order": 4,
+	"regexMatcher": "Antivirus scan for (\\b[a-fA-F\\d]{64}\\b)[\\s\\S]*?([0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}) UTC[\\s\\S]*?([0-9]+) out of ([0-9]+) antivirus",
+	"requestGroup": "INTERNET"
+}

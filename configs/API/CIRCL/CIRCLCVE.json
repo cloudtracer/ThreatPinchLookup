@@ -1,0 +1,48 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://cve.circl.lu/cve/${PINCH.HOVERITEM}",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "CIRCL"
+        },
+        "CVSS": {
+            "mapping": "${PINCH.RESPONSE.cvss}",
+            "order": 1,
+            "title": "CVSS"
+        },
+        "Metasploit": {
+            "mapping": "${PINCH.RESPONSE.map_cve_msf.msfid}",
+            "order": 2,
+            "title": "Metasploit"
+        },
+        "ExploitDB": {
+            "mapping": "${PINCH.RESPONSE.map_cve_exploitdb.exploitdbid}",
+            "order": 3,
+            "title": "ExploitDB"
+        },
+        "Saint": {
+            "mapping": "${PINCH.RESPONSE.map_cve_saint.saintexploitid}",
+            "order": 4,
+            "title": "Saint"
+        },
+        "Summary": {
+            "mapping": "${PINCH.RESPONSE.summary}",
+            "order": 5,
+            "title": "Summary"
+        }
+    },
+    "iocs": true,
+    "excludePivots": ["IPV4", "EFQDN", "SHA2", "MD5", "SHA1"],
+    "dataType": "JSON",
+    "httpHeaders": "",
+    "httpType": "GET",
+    "lookupName": "CIRCL CVE Lookup",
+    "lookupType": "CVE",
+    "lookupUrl": "https://cve.circl.lu/api/cve/${PINCH.HOVERITEM}",
+    "lookupVariable": "CIRCLCVE",
+    "order": 16,
+    "requestGroup": "INTERNET"
+}

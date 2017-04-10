@@ -1,0 +1,41 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://otx.alienvault.com/browse/pulses/?q=${PINCH.HOVERITEM}",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "AlienVault"
+        },
+        "pulses": {
+            "mapping": "${PINCH.RESPONSE.pulse_info.count}",
+            "order": 1,
+            "title": "Pulses"
+        }
+    },
+    "dataType": "JSON",
+    "httpHeaders": {
+        "X-OTX-API-KEY": "${PINCH.USERDEFINED.api_key.value}"
+    },
+    "httpType": "GET",
+    "iocs": true,
+    "lookupName": "AlienVault MD5 Lookup",
+    "lookupType": "MD5",
+    "lookupUrl": "https://otx.alienvault.com/api/v1/indicators/file/${PINCH.HOVERITEM}/general",
+    "lookupVariable": "ALIENVAULTMD5",
+    "order": 13,
+    "registration": {
+        "link": "https://otx.alienvault.com/",
+        "summary": "World's First Open Threat Intelligence Community - Threat sharing in the security industry remains mainly ad-hoc and informal, filled with blind spots, frustration, and pitfalls. Our vision is for companies and government agencies to gather and share relevant, timely, and accurate information about new or ongoing cyberattacks and threats as quickly as possible to avoid major breaches (or minimize the damage from an attack). AlienVaultÃ¢â‚¬â„¢s Open Threat Exchange (OTX) delivers the first truly open threat intelligence community that makes this vision a reality.",
+        "title": "AlienVault Open Threat Exchange",
+        "type": "Free"
+    },
+    "requestGroup": "INTERNET",
+    "userDefined": {
+        "api_key": {
+            "title": "AlienVault OTX Key",
+            "value": "YOURDATAHERE"
+        }
+    }
+}

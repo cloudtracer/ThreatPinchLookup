@@ -1,0 +1,39 @@
+{
+    "authorizationSettings": {
+        "api_key": "${PINCH.USERDEFINED.api_key.value}",
+        "api_password": "${PINCH.USERDEFINED.api_password.value}",
+        "validated": true
+    },
+    "authorizationType": "API_KEY_AND_PASSWORD_BASIC",
+    "dataSchema": {},
+    "dataType": "JSON",
+    "disabled": true,
+    "httpHeaders": "",
+    "httpType": "GET",
+    "iocs": true,
+    "lookupName": "PassiveTotal EFQDN Malware",
+    "lookupType": "EFQDN",
+    "lookupUrl": "https://api.passivetotal.org/v2/enrichment/malware?query=${PINCH.HOVERITEM}",
+    "lookupVariable": "PASSIVETOTALEFQDNMW",
+    "onError": "API Error",
+    "onNotAuthorized": "Setup PassiveTotal API",
+    "order": 21,
+    "regexMatcher": false,
+    "registration": {
+        "link": "https://www.passivetotal.org/registration",
+        "summary": "A threat-analysis platform created for analysts, by analysts. Our goal is to provide analysts with as much data as possible in order to prevent attacks before they happen.",
+        "title": "PassiveTotal",
+        "type": "Free Limited (15 API requests per day)"
+    },
+    "requestGroup": "INTERNET",
+    "userDefined": {
+        "api_key": {
+            "title": "Passive Total Key",
+            "value": "YOURDATAHERE"
+        },
+        "api_password": {
+            "title": "PassiveTotal Secret",
+            "value": "YOURDATAHERE"
+        }
+    }
+}

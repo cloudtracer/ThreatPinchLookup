@@ -1,0 +1,46 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "condition": "true",
+            "datapath": "RESPONSE.response",
+            "limit": 5,
+            "linkTitle": "${PINCH.LOOP.Event.id}",
+            "linkUrl": "${PINCH.USERDEFINED.api_url.value}/events/view/${PINCH.LOOP.Event.id}",
+            "mapping": "${PINCH.LINKURL} TL: ${PINCH.LOOP.Event.threat_level_id}",
+            "objectloop": true,
+            "order": 0,
+            "title": "MISP"
+        }
+    },
+    "dataType": "JSON",
+    "disabled": true,
+    "httpHeaders": {
+        "Authorization": "${PINCH.USERDEFINED.api_key.value}"
+    },
+    "httpType": "GET",
+    "iocs": true,
+    "lookupName": "MISP SHA2 Lookup",
+    "lookupType": "SHA2",
+    "lookupUrl": "${PINCH.USERDEFINED.api_url.value}/events/restSearch/download/${PINCH.HOVERITEM}/sha256/null/null/null.json",
+    "lookupVariable": "MISPSHA2",
+    "order": 4,
+    "regexMatcher": false,
+    "requestGroup": "INTERNET",
+    "registration": {
+        "link": "http://www.misp-project.org/index.html",
+        "summary": "The MISP threat sharing platform is a free and open source software helping information sharing of threat and cyber security indicators. A platform for sharing, storing and correlating Indicators of Compromises of targeted attacks. Discover how MISP is used today in multiple organisations. Not only to store, share, collaborate on malware, but also to use the IOCs to detect and prevent attacks.",
+        "title": "MISP Threat Sharing",
+        "type": "Self Hosted"
+    },
+    "userDefined": {
+        "api_key": {
+            "title": "MISP Key",
+            "value": "YOURDATAHERE"
+        },
+        "api_url": {
+            "title": "MISP URL",
+            "value": "YOURDATAHERE"
+        }
+    }
+}

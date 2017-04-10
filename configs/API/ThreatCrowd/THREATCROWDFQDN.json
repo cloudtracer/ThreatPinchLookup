@@ -1,0 +1,42 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://www.threatcrowd.org/domain.php?domain=${PINCH.HOVERITEM}",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "ThreatCrowd"
+        },
+        "resolutions": {
+            "condition": "true",
+            "datapath": "RESPONSE.resolutions",
+            "mapping": "${PINCH.LOOP.ip_address}",
+            "objectloop": true,
+            "order": 1,
+            "limit": 5,
+            "title": "${PINCH.LOOP.last_resolved}"
+        },
+        "hashes": {
+            "condition": "true",
+            "datapath": "RESPONSE.hashes",
+            "mapping": "${PINCH.LOOP}",
+            "objectloop": true,
+            "order": 2,
+            "limit": 5,
+            "title": "Hash"
+        }
+    },
+    "indicatorExpression": "${(PINCH.RESPONSE.votes < 1) 0 ((PINCH.RESPONSE.votes == -1 ) 0 'bad' : 'suspicious') : 'good'}",
+    "dataType": "JSON",
+    "disabled": false,
+    "httpHeaders": "",
+    "httpType": "GET",
+    "lookupName": "ThreatCrowd FQDN Lookup",
+    "lookupType": "EFQDN",
+    "iocs": true,
+    "lookupUrl": "https://www.threatcrowd.org/searchApi/v2/domain/report/?domain=${PINCH.HOVERITEM}",
+    "lookupVariable": "THREATCROWDFQDN",
+    "order": 33,
+    "requestGroup": "INTERNET"
+}

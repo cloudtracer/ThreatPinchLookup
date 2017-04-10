@@ -1,0 +1,35 @@
+{
+    "authorizationType": "DEFAULT",
+    "dataSchema": {
+        "title": {
+            "linkTitle": "${PINCH.HOVERITEM}",
+            "linkUrl": "https://www.virustotal.com/en/domain/${PINCH.HOVERITEM}/information/",
+            "mapping": "${PINCH.LINKURL}",
+            "order": 0,
+            "title": "VirusTotal"
+        }
+    },
+    "dataType": "JSON",
+    "httpHeaders": "",
+    "httpType": "GET",
+    "iocs": true,
+    "indicatorExpression": "${((JSON.stringify(PINCH.RESPONSE.categories).toLowerCase().indexOf('infection') >1 || JSON.stringify(PINCH.RESPONSE.categories).toLowerCase().indexOf('botnet') >1 || JSON.stringify(PINCH.RESPONSE.categories).toLowerCase().indexOf('phishing') >1 || JSON.stringify(PINCH.RESPONSE.categories).toLowerCase().indexOf('attacks') >1 || JSON.stringify(PINCH.RESPONSE.categories).toLowerCase().indexOf('compromised') >1) 0 'bad' : 'good')}",
+    "lookupName": "VirusTotal EFQDN Lookup",
+    "lookupType": "EFQDN",
+    "lookupUrl": "https://www.virustotal.com/vtapi/v2/domain/report?domain=${PINCH.HOVERITEM}&apikey=${PINCH.USERDEFINED.api_key.value}",
+    "lookupVariable": "VIRUSTOTALEFQDN",
+    "order": 18,
+    "registration": {
+        "link": "https://www.virustotal.com/en/documentation/virustotal-community/",
+        "summary": "VirusTotal is a free service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware.",
+        "title": "VirusTotal",
+        "type": "Free"
+    },
+    "requestGroup": "INTERNET",
+    "userDefined": {
+        "api_key": {
+            "title": "API Key",
+            "value": "YOURDATAHERE"
+        }
+    }
+}
