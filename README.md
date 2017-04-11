@@ -60,6 +60,7 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 1.0.53: 2017-04-10 - Minor updates to popover styles.
 - 1.0.51: 2017-04-09 - Added custom API integration wizard, be careful its still early stages and no validation!
 - 1.0.50: 2017-04-05 - Fix for REST API responses which return with content type HTML. Added ThreatCrowd Lookups for IPV4, EFQDN and MD5. Added API group for ThreatCrowd for future API rate limiting, ThreatCrowd does not require an API key.
 - 1.0.49: 2017-04-04 - Refectored some functionality to tighten extension permissions. Created [ThreatPinch Lite](https://chrome.google.com/webstore/detail/threatpinch-lite/jcjcflihdgdhapkadakfahkplbafobbi) build which is essentially the same plugin without the inject.js file to create the on hover tool tips.
