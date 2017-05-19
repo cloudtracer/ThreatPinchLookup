@@ -63,7 +63,8 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
-- 2.0.5: 2017-05-17 - Fixes for popup placement edge cases.
+- 2.0.7: 2017-05-19 - Modified z-index for popover, improved placement code, fixed issue with RFC1918 detection on 172.16/12 subnet ranges.
+- 2.0.5: 2017-05-17 - Fixes for popover placement edge cases.
 - 2.0.4: 2017-05-17 - Added MAC address request type provided by @gd1eh, additional styling fixes for edge cases.
 - 2.0.3: 2017-05-16 - Added "Block TP on this site" button to page action. Easy way to add the current domain to the global exclude list, which prevents the inject.js file from running on that page.
 - 2.0.2: 2017-05-15 - Minor updates to migration code to keep user defined settings in lookup types, fix for extension id in custom lookup URL creation.
