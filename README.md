@@ -63,6 +63,7 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 2.0.9: 2017-05-25 - Fix for dataType mismatch in some response processing.
 - 2.0.8: 2017-05-20 - Performance updates for pivot collections, long json responses, faster json parsing.
 - 2.0.7: 2017-05-19 - Modified z-index for popover, improved placement code, fixed issue with RFC1918 detection on 172.16/12 subnet ranges.
 - 2.0.5: 2017-05-17 - Fixes for popover placement edge cases.
