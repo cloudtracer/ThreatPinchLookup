@@ -21,6 +21,7 @@ _See it in action on Cisco Talos Blog._
 - SHA2
 - CVE
 - FQDN (EFQDN is for Internet FQDN, IFQDN is for internal domains)
+- Bitcoin
 - Add your own in the options with regex!
 
 ## Current Integrations
@@ -35,6 +36,7 @@ _See it in action on Cisco Talos Blog._
 - MISP for MD5 and SHA2 (If you want more submit an issue in this github)
 - Censys.io for IPv4 lookups
 - Shodan for IPV4 lookups
+- BlockChain.info for Bitcoin Lookups
 - Add your own in the developers options page!
 
 ## Need a new integration?
@@ -63,6 +65,7 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 2.0.10: 2017-09-03 - Added preservecase flag for Lookup Types, added blockchain.info Request Lookups for bitcoin address lookups.
 - 2.0.9: 2017-05-25 - Fix for dataType mismatch in some response processing.
 - 2.0.8: 2017-05-20 - Performance updates for pivot collections, long json responses, faster json parsing.
 - 2.0.7: 2017-05-19 - Modified z-index for popover, improved placement code, fixed issue with RFC1918 detection on 172.16/12 subnet ranges.
