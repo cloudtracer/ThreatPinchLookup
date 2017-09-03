@@ -65,6 +65,7 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 2.0.14: 2017-09-03 - Minor fixes to search page for case sensitive lookups. Fix pivots for case sesntive IoC's.
 - 2.0.10: 2017-09-03 - Added preservecase flag for Lookup Types, added blockchain.info Request Lookups for bitcoin address lookups.
 - 2.0.9: 2017-05-25 - Fix for dataType mismatch in some response processing.
 - 2.0.8: 2017-05-20 - Performance updates for pivot collections, long json responses, faster json parsing.
