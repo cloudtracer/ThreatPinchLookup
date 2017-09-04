@@ -25,18 +25,18 @@ _See it in action on Cisco Talos Blog._
 - Add your own in the options with regex!
 
 ## Current Integrations
-- ThreatMiner for IPv4, FQDN, MD5, SHA1 and SHA2 lookups
-- Alienvault OTX for IPv4, MD5, SHA1 and SHA2 lookups
-- IBM XForce Exchange for IPv4, EFQDN lookups
-- VirusTotal for MD5, SHA1, SHA2 and FQDN lookups
-- Cymon.io for IPv4 lookups
-- ThreatCrowd for IPv4, FQDN and MD5 lookups
-- CIRCL (Computer Incident Response Center Luxembourg) for CVE lookups.
-- PassiveTotal for FQDN Whois lookups
-- MISP for MD5 and SHA2 (If you want more submit an issue in this github)
-- Censys.io for IPv4 lookups
-- Shodan for IPV4 lookups
-- BlockChain.info for Bitcoin Lookups
+- [ThreatMiner](https://www.threatminer.org/) for IPv4, FQDN, MD5, SHA1 and SHA2 lookups
+- [Alienvault OTX](https://otx.alienvault.com/) for IPv4, MD5, SHA1 and SHA2 lookups
+- [IBM XForce Exchange](https://exchange.xforce.ibmcloud.com/) for IPv4, EFQDN lookups
+- [VirusTotal](https://www.virustotal.com/) for MD5, SHA1, SHA2 and FQDN lookups
+- [Cymon.io](https://cymon.io/) for IPv4 lookups
+- [ThreatCrowd](https://www.threatcrowd.org/) for IPv4, FQDN and MD5 lookups
+- [CIRCL](https://www.circl.lu/) (Computer Incident Response Center Luxembourg) for CVE lookups.
+- [PassiveTotal](https://www.passivetotal.org/) for FQDN Whois lookups
+- [MISP](http://www.misp-project.org/) for MD5 and SHA2 (If you want more submit an issue in this github)
+- [Censys.io](https://censys.io/) for IPv4 lookups
+- [Shodan](https://www.shodan.io/) for IPV4 lookups
+- [BlockChain.info](https://blockchain.info/) for Bitcoin Lookups
 - Add your own in the developers options page!
 
 ## Need a new integration?
@@ -57,6 +57,10 @@ Youtube channel with [Demos](https://www.youtube.com/channel/UCuhYaI1qbb-exuhzsc
 ## Chrome Web Store
 
 You can download the ThreatPinch Lookup extension directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke)
+
+## How can I contribute/help ThreatPinch Lookup?
+
+The best way to help or contribute to this project is to share any custom integrations you create with the community! Otherwise positive reviews and feedback in the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke) and [Product Hunt](https://www.producthunt.com/posts/threatpinch-lookup) would be greatly appreciated!
 
 ## Where is my data stored?
 
