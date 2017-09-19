@@ -58,7 +58,7 @@ Youtube channel with [Demos](https://www.youtube.com/channel/UCuhYaI1qbb-exuhzsc
 
 You can download the ThreatPinch Lookup extension directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke).
 
-[ThreatPinch Lite](https://chrome.google.com/webstore/detail/threatpinch-lite/jcjcflihdgdhapkadakfahkplbafobbi) is also available which has all the API lookups of ThreatPinch, but without the on hover injection code. ThreatPinch Lite relies on only the highlight right click search, and requires less permissions.
+[ThreatPinch Lite](https://chrome.google.com/webstore/detail/threatpinch-lite/jcjcflihdgdhapkadakfahkplbafobbi) is also available which has all the API lookups of ThreatPinch, but without the on hover injection code. ThreatPinch Lite relies on only the highlight right click search, and requires no permissions.
 
 ## Experimental Firefox build
 
