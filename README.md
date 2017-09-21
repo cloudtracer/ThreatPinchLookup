@@ -64,6 +64,10 @@ You can download the ThreatPinch Lookup extension directly from the [Chrome Web 
 
 You can find the initial release of ThreatPinch Lookup for Firefox in this repo. Click this link to install [ThreatPinch Lookup for Firefox](https://github.com/cloudtracer/ThreatPinchLookup/raw/master/ThreatPinchLookupFirefox.xpi).
 
+## Firefox Add-Ons Store
+
+ThreatPinch Lite is now available in the [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/threatpinch-lite/)!
+
 ## How can I contribute/help ThreatPinch Lookup?
 
 The best way to help or contribute to this project is to share any custom integrations you create with the community! Otherwise positive reviews and feedback in the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke) and [Product Hunt](https://www.producthunt.com/posts/threatpinch-lookup) would be greatly appreciated!
