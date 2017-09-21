@@ -66,6 +66,8 @@ You can find the initial release of ThreatPinch Lookup for Firefox in this repo.
 
 ## Firefox Add-Ons Store
 
+ThreatPinch Lookup for Firefox is now avaible in the [FireFox Add-ons store](https://addons.mozilla.org/en-US/firefox/addon/threatpinch-lookup-for-firefox/)!
+
 ThreatPinch Lite is now available in the [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/threatpinch-lite/)!
 
 ## How can I contribute/help ThreatPinch Lookup?
