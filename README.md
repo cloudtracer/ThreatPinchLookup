@@ -60,7 +60,7 @@ You can download the ThreatPinch Lookup extension directly from the [Chrome Web 
 
 [ThreatPinch Lite](https://chrome.google.com/webstore/detail/threatpinch-lite/jcjcflihdgdhapkadakfahkplbafobbi) is also available which has all the API lookups of ThreatPinch, but without the on hover injection code. ThreatPinch Lite relies on only the highlight right click search, and requires only permissions to make request to APIs which do not allow CORS requests.
 
-## Firefox Add-Ons Store
+## Firefox Add-Ons
 
 ThreatPinch Lookup for Firefox is now avaible in the [FireFox Add-ons store](https://addons.mozilla.org/en-US/firefox/addon/threatpinch-lookup-for-firefox/)!
 
