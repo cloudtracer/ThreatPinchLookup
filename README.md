@@ -60,12 +60,6 @@ You can download the ThreatPinch Lookup extension directly from the [Chrome Web 
 
 [ThreatPinch Lite](https://chrome.google.com/webstore/detail/threatpinch-lite/jcjcflihdgdhapkadakfahkplbafobbi) is also available which has all the API lookups of ThreatPinch, but without the on hover injection code. ThreatPinch Lite relies on only the highlight right click search, and requires only permissions to make request to APIs which do not allow CORS requests.
 
-## Firefox Add-Ons
-
-ThreatPinch Lookup for Firefox is now avaible in the [FireFox Add-ons store](https://addons.mozilla.org/en-US/firefox/addon/threatpinch-lookup-for-firefox/)!
-
-ThreatPinch Lite is now available in the [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/threatpinch-lite/)!
-
 ## How can I contribute/help ThreatPinch Lookup?
 
 The best way to help or contribute to this project is to share any custom integrations you create with the community! Otherwise positive reviews and feedback in the [Chrome Web Store](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke) and [Product Hunt](https://www.producthunt.com/posts/threatpinch-lookup) would be greatly appreciated!
@@ -77,6 +71,7 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Release Notes
+- 2.0.17: 2017-11-09 - Remove Firefox store links, Mozilla reviewers deactived plugin after constant re-reviews. Will make Firefox builds available elsewhere, do not have time to deal with constant re-reviews for silly issues.
 - 2.0.17: 2017-09-22 - ThreatPinch Lookup and ThreatPinch lite are now both in the Mozilla Add-ons page. Breaking changes were made to the expressions (icons, indicators). Icons should be easier to use in the future. Loop conditions were removed, if you need them use JSON Path arguments to filter content. Reliance on unsafe-eval was removed. These changes will be migrated to the Chrome Extension after some additional testing. Firefox versions should be fully functional at this point, if not please report any issues.
 - 2.0.14: 2017-09-18 - Full ThreatPinch Lookup XPI file for Firefox available in this repo, still some minor bugs related to the drag and drop. Working on cleaning up some items to get it through the Mozilla Add-ons review process.
 - 2.0.14: 2017-09-16 - ThreatPinch Lite published for Firefox in Mozilla Add-ons, still pending review.
