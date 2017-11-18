@@ -70,6 +70,9 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
+## Firefox build?
+If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://cdn.rawgit.com/cloudtracer/ThreatPinchLookup/8b3b9602/Firefox-install.html), just click install then ignore all the security warnings like a security pro.
+
 ## Release Notes
 - 2.0.17: 2017-11-09 - Remove Firefox store links, Mozilla reviewers deactived plugin after constant re-reviews. Will make Firefox builds available elsewhere, do not have time to deal with constant re-reviews for silly issues.
 - 2.0.17: 2017-09-22 - ThreatPinch Lookup and ThreatPinch lite are now both in the Mozilla Add-ons page. Breaking changes were made to the expressions (icons, indicators). Icons should be easier to use in the future. Loop conditions were removed, if you need them use JSON Path arguments to filter content. Reliance on unsafe-eval was removed. These changes will be migrated to the Chrome Extension after some additional testing. Firefox versions should be fully functional at this point, if not please report any issues.
