@@ -74,6 +74,7 @@ Optionally, in the developers options you can configure a CouchDB server to sync
 If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://cdn.rawgit.com/cloudtracer/ThreatPinchLookup/8b3b9602/Firefox-install.html), just click install then ignore all the security warnings like a good security pro.
 
 ## Release Notes
+- 2.0.18: 2018-01-31 - Pushed 2.0.17 updates to Chrome extension. Added Zoomeye, Bitcoin WhosWho and enhanced Shodan/Censys popup data. Upgraded PouchDB to latest for performance improvements.
 - 2.0.17: 2017-11-09 - Remove Firefox store links, Mozilla reviewers deactived plugin after constant re-reviews. Will make Firefox builds available elsewhere, do not have time to deal with constant re-reviews for silly issues.
 - 2.0.17: 2017-09-22 - ThreatPinch Lookup and ThreatPinch lite are now both in the Mozilla Add-ons page. Breaking changes were made to the expressions (icons, indicators). Icons should be easier to use in the future. Loop conditions were removed, if you need them use JSON Path arguments to filter content. Reliance on unsafe-eval was removed. These changes will be migrated to the Chrome Extension after some additional testing. Firefox versions should be fully functional at this point, if not please report any issues.
 - 2.0.14: 2017-09-18 - Full ThreatPinch Lookup XPI file for Firefox available in this repo, still some minor bugs related to the drag and drop. Working on cleaning up some items to get it through the Mozilla Add-ons review process.
