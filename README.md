@@ -25,18 +25,20 @@ _See it in action on Cisco Talos Blog._
 - Add your own in the options with regex!
 
 ## Current Integrations
-- [ThreatMiner](https://www.threatminer.org/) for IPv4, FQDN, MD5, SHA1 and SHA2 lookups
-- [Alienvault OTX](https://otx.alienvault.com/) for IPv4, MD5, SHA1 and SHA2 lookups
-- [IBM XForce Exchange](https://exchange.xforce.ibmcloud.com/) for IPv4, EFQDN lookups
-- [VirusTotal](https://www.virustotal.com/) for MD5, SHA1, SHA2 and FQDN lookups
-- [Cymon.io](https://cymon.io/) for IPv4 lookups
-- [ThreatCrowd](https://www.threatcrowd.org/) for IPv4, FQDN and MD5 lookups
+- [ThreatMiner](https://www.threatminer.org/) for IPv4, FQDN, MD5, SHA1 and SHA2 lookups.
+- [Alienvault OTX](https://otx.alienvault.com/) for IPv4, MD5, SHA1 and SHA2 lookups.
+- [IBM XForce Exchange](https://exchange.xforce.ibmcloud.com/) for IPv4, EFQDN lookups.
+- [VirusTotal](https://www.virustotal.com/) for MD5, SHA1, SHA2 and FQDN lookups.
+- [Cymon.io](https://cymon.io/) for IPv4 lookups.
+- [ThreatCrowd](https://www.threatcrowd.org/) for IPv4, FQDN and MD5 lookups.
 - [CIRCL](https://www.circl.lu/) (Computer Incident Response Center Luxembourg) for CVE lookups.
-- [PassiveTotal](https://www.passivetotal.org/) for FQDN Whois lookups
-- [MISP](http://www.misp-project.org/) for MD5 and SHA2 (If you want more submit an issue in this github)
-- [Censys.io](https://censys.io/) for IPv4 lookups
-- [Shodan](https://www.shodan.io/) for IPV4 lookups
-- [BlockChain.info](https://blockchain.info/) for Bitcoin Lookups
+- [PassiveTotal](https://www.passivetotal.org/) for FQDN Whois lookups.
+- [MISP](http://www.misp-project.org/) for MD5 and SHA2 (If you want more submit an issue in this github).
+- [Censys.io](https://censys.io/) for IPv4 lookups.
+- [Shodan](https://www.shodan.io/) for IPv4 lookups.
+- [ZoomEye](https://www.zoomeye.org/) for IPv4 lookups.
+- [BlockChain.info](https://blockchain.info/) for Bitcoin lookups.
+- [Bitcoin Whos Who](http://bitcoinwhoswho.com/) for Bitcoin lookups.
 - Add your own in the developers options page!
 
 ## Need a new integration?
