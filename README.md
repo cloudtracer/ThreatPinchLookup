@@ -76,6 +76,7 @@ Optionally, in the developers options you can configure a CouchDB server to sync
 If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://cdn.rawgit.com/cloudtracer/ThreatPinchLookup/8b3b9602/Firefox-install.html), just click install then ignore all the security warnings like a good security pro.
 
 ## Release Notes
+- 2.0.23: 2018-02-08 - Catch Jexl errors (no impact, just noise in the console).
 - 2.0.22: 2018-02-08 - Fix issue where custom width settings would not persist across upgrades, added AV vendor names back to VirusTotal lookups. Expose JSON Path parent objects name with ${PINCH.LOOPPARENTS} and ${PINCH.LOOPPARENTNAME}
 - 2.0.18: 2018-01-31 - Pushed 2.0.17 updates to Chrome extension. Added Zoomeye, Bitcoin WhosWho and enhanced Shodan/Censys popup data. Upgraded PouchDB to latest for performance improvements.
 - 2.0.17: 2017-11-09 - Remove Firefox store links, Mozilla reviewers deactived plugin after constant re-reviews. Will make Firefox builds available elsewhere, do not have time to deal with constant re-reviews for silly issues.
