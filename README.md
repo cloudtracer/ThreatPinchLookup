@@ -22,6 +22,8 @@ _See it in action on Cisco Talos Blog._
 - CVE
 - FQDN (EFQDN is for Internet FQDN, IFQDN is for internal domains)
 - Bitcoin
+- Email
+- URL
 - Add your own in the options with regex!
 
 ## Current Integrations
@@ -39,6 +41,7 @@ _See it in action on Cisco Talos Blog._
 - [ZoomEye](https://www.zoomeye.org/) for IPv4 lookups.
 - [BlockChain.info](https://blockchain.info/) for Bitcoin lookups.
 - [Bitcoin Whos Who](http://bitcoinwhoswho.com/) for Bitcoin lookups.
+- [PulseDive](https://pulsedive.com) for IPv4, FQDN and URL lookups.
 - Add your own in the developers options page!
 
 ## Need a new integration?
@@ -76,6 +79,7 @@ Optionally, in the developers options you can configure a CouchDB server to sync
 If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://cdn.rawgit.com/cloudtracer/ThreatPinchLookup/8b3b9602/Firefox-install.html), just click install then ignore all the security warnings like a good security pro.
 
 ## Release Notes
+- 2.0.24: 2018-02-18 - Added PulseDive lookups.
 - 2.0.23: 2018-02-08 - Catch Jexl errors (no impact, just noise in the console).
 - 2.0.22: 2018-02-08 - Fix issue where custom width settings would not persist across upgrades, added AV vendor names back to VirusTotal lookups. Expose JSON Path parent objects name with ${PINCH.LOOPPARENTS} and ${PINCH.LOOPPARENTNAME}
 - 2.0.18: 2018-01-31 - Pushed 2.0.17 updates to Chrome extension. Added Zoomeye, Bitcoin WhosWho and enhanced Shodan/Censys popup data. Upgraded PouchDB to latest for performance improvements.
