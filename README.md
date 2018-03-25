@@ -27,10 +27,10 @@ _See it in action on Cisco Talos Blog._
 - Add your own in the options with regex!
 
 ## Current Integrations
-- [ThreatMiner](https://www.threatminer.org/) for IPv4, FQDN, MD5, SHA1 and SHA2 lookups.
-- [Alienvault OTX](https://otx.alienvault.com/) for IPv4, MD5, SHA1 and SHA2 lookups.
+- [ThreatMiner](https://www.threatminer.org/) for IPv4, Email, FQDN, MD5, SHA1 and SHA2 lookups.
+- [Alienvault OTX](https://otx.alienvault.com/) for IPv4, CVE, MD5, SHA1 and SHA2 lookups.
 - [IBM XForce Exchange](https://exchange.xforce.ibmcloud.com/) for IPv4, EFQDN lookups.
-- [VirusTotal](https://www.virustotal.com/) for MD5, SHA1, SHA2 and FQDN lookups.
+- [VirusTotal](https://www.virustotal.com/) for MD5, SHA1, SHA2, URL and FQDN lookups.
 - [Cymon.io](https://cymon.io/) for IPv4 lookups.
 - [ThreatCrowd](https://www.threatcrowd.org/) for IPv4, FQDN and MD5 lookups.
 - [CIRCL](https://www.circl.lu/) (Computer Incident Response Center Luxembourg) for CVE lookups.
@@ -42,6 +42,9 @@ _See it in action on Cisco Talos Blog._
 - [BlockChain.info](https://blockchain.info/) for Bitcoin lookups.
 - [Bitcoin Whos Who](http://bitcoinwhoswho.com/) for Bitcoin lookups.
 - [PulseDive](https://pulsedive.com) for IPv4, FQDN and URL lookups.
+- [Recorded Future](http://recordedfuture.com/) for IPv4, FQDN, MD5, SHA1 and SHA2 lookups.
+- [Google Safe Browsing](https://safebrowsing.google.com/) for URL lookups
+- [Have I Been Pwned](https://haveibeenpwned.com/) for Email lookups.
 - Add your own in the developers options page!
 
 ## Need a new integration?
@@ -79,6 +82,7 @@ Optionally, in the developers options you can configure a CouchDB server to sync
 If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://cdn.rawgit.com/cloudtracer/ThreatPinchLookup/8b3b9602/Firefox-install.html), just click install then ignore all the security warnings like a good security pro.
 
 ## Release Notes
+- 3.0.0: 2018-03-25 - New graph, ability to pivot and perform lookup of related graph items. CSV Exports for bulk lookups page. New virtual components on bulk search page. All requests and response processing performed through web workers for better performance. Added Recorded Future Lookups by @cicakdinding01. Added Google Safe Browser, Have I Been Pwned Lookups. Ability to toggle lookups to work either via on hover or via search page (more intrusive popovers could be left to working only on search page).
 - 2.0.24: 2018-02-18 - Added PulseDive lookups.
 - 2.0.23: 2018-02-08 - Catch Jexl errors (no impact, just noise in the console).
 - 2.0.22: 2018-02-08 - Fix issue where custom width settings would not persist across upgrades, added AV vendor names back to VirusTotal lookups. Expose JSON Path parent objects name with ${PINCH.LOOPPARENTS} and ${PINCH.LOOPPARENTNAME}
