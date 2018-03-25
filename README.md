@@ -12,7 +12,9 @@ _A sample of the type of data that can be displayed when hovering over an IPv4 a
 
 _See it in action on Cisco Talos Blog._
 
+![](https://github.com/cloudtracer/ThreatPinchLookup/blob/master/output.gif)
 
+_Search and pivot using the graph_
 
 ## Current IOC Support
 - IPv4
