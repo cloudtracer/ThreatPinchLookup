@@ -84,6 +84,7 @@ Optionally, in the developers options you can configure a CouchDB server to sync
 If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://cdn.rawgit.com/cloudtracer/ThreatPinchLookup/8b3b9602/Firefox-install.html), just click install then ignore all the security warnings like a good security pro.
 
 ## Release Notes
+- 3.0.4: 2018-04-08 - Various bug fixes, performance improvements.
 - 3.0.3: 2018-03-26 - Break fix for details on graph.
 - 3.0.2: 2018-03-26 - Improved CSV exports, Show All Pivots checkbox in the bulk search (default is to only show observables with 2 or more relations), Show Graph checkbox in bulk search to either remove or refresh graph.
 - 3.0.0: 2018-03-25 - New graph, ability to pivot and perform lookup of related graph items. CSV Exports for bulk lookups page. New virtual components on bulk search page. All requests and response processing performed through web workers for better performance. Added Recorded Future Lookups by @cicakdinding01. Added Google Safe Browser, Have I Been Pwned Lookups. Ability to toggle lookups to work either via on hover or via search page (more intrusive popovers could be left to working only on search page).
