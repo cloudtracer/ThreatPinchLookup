@@ -43,9 +43,10 @@ _Search and pivot using the graph_
 - [ZoomEye](https://www.zoomeye.org/) for IPv4 lookups.
 - [BlockChain.info](https://blockchain.info/) for Bitcoin lookups.
 - [Bitcoin Whos Who](http://bitcoinwhoswho.com/) for Bitcoin lookups.
+- [BTC](https://btc.com/) for Bitcoin lookups.
 - [PulseDive](https://pulsedive.com) for IPv4, FQDN and URL lookups.
 - [Recorded Future](http://recordedfuture.com/) for IPv4, FQDN, MD5, SHA1 and SHA2 lookups.
-- [Google Safe Browsing](https://safebrowsing.google.com/) for URL lookups
+- [Google Safe Browsing](https://safebrowsing.google.com/) for URL lookups.
 - [Have I Been Pwned](https://haveibeenpwned.com/) for Email lookups.
 - Add your own in the developers options page!
 
