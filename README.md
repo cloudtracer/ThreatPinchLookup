@@ -82,7 +82,7 @@ There is no backend server or database for ThreatPinch Lookup. All data is store
 Optionally, in the developers options you can configure a CouchDB server to sync your API responses with. See the [Wiki](https://github.com/cloudtracer/ThreatPinchLookup/wiki) for more details.
 
 ## Firefox build?
-If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://cdn.rawgit.com/cloudtracer/ThreatPinchLookup/8b3b9602/Firefox-install.html), just click install then ignore all the security warnings like a good security pro.
+If you are desperate for the Firefox build of ThreatPinch Lookup I've made it temporarily available [here](https://rawgit.com/cloudtracer/ThreatPinchLookup/master/Firefox-install.html), just click install then ignore all the security warnings like a good security pro.
 
 ## Release Notes
 - 3.0.6: 2018-08-21 - Fix to not display graphs on low powered GPU devices.
